@@ -5,7 +5,7 @@ export default function About() {
 
     return (
     <>
-    <Title>Home</Title>
+    <Title>About</Title>
 
     <div className="bg-mocha-maroon text-center text-white" style={{"margin-top":"16px",height:"auto",padding:"16px",margin:"12px"}}>
         <br/>
