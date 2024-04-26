@@ -15,6 +15,7 @@ export default function About() {
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav" style={{"font-size":"32px","font-weight":500}}>
                 <li><a  style={{"font-size":"20px","font-weight":500}} href="/" className="uk-navbar-item text-white">Home</a></li>
+                <li><a style={{"font-size":"20px","font-weight":500}} href="/diary" className="uk-navbar-item text-white">Diary</a></li>
                 <li><a  style={{"font-size":"20px","font-weight":500}} className="text-white"  href="/about">About</a></li>
                 <li><a style={{"font-size":"20px","font-weight":500}} className="text-white" href="/contact">Contact</a></li>
             </ul>
@@ -24,7 +25,7 @@ export default function About() {
     <div className="bg-mocha-maroon text-center text-white" style={{"margin-top":"16px",height:"100vh"}}>
         <br/>
         <span style={{"font-weight":"500","font-size":"24px"}}>
-            History is yet to be written!
+            <h1>About</h1>
         </span>    
     </div>
     </>
