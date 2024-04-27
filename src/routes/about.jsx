@@ -7,7 +7,7 @@ export default function About() {
     <>
     <Title>About</Title>
 
-    <div className="bg-mocha-maroon text-center text-white" style={{"margin-top":"16px",height:"auto",padding:"16px",margin:"12px"}}>
+    <div className="bg-mocha-maroon text-center text-white" style={{"margin-top":"16px",height:"auto",padding:"16px"}}>
         <br/>
         <span style={{"font-weight":"500","font-size":"48px"}}>
             <h1>About Me</h1>
