@@ -4,6 +4,7 @@ import "../styles/universal.css";
 const currentYear = new Date().getFullYear();
 
 ---
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,9 +24,11 @@ const currentYear = new Date().getFullYear();
         </ul>
     </div>
 </nav>
+<body>
 <slot>
 
 </slot>
+</body>
 <div class="bg-mocha-maroon" style={{padding:"6px","font-size":"20px","align-items":"center","text-align":"center"}} uk-sticky="position: bottom">
     © 2023 - {currentYear} Debaditya . Powered by <a href="https://astro.build/" target="_blank" rel="noopener">AstroJS</a> and <a href="https://getuikit.com/" target="_blank" rel="noopener">UIkit</a>
 </div>
@@ -36,3 +39,4 @@ const currentYear = new Date().getFullYear();
         document.body.style.color="#fff"
     })
 </script>
+</html>
