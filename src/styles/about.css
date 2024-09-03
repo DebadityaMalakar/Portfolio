@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Noto Sans",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.text-center{
+    text-align: center !important;
+}
+
+.bg-mocha-maroon {
+    background: var(--ctp-mocha-maroon) !important;
+}
+
+.text-bold{
+    font-weight: 500;
+}
+
+.text-white{
+    color: white !important;
+}

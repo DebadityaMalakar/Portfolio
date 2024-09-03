@@ -1,0 +1,34 @@
+---
+import Layout from "../components/layout.astro";
+import "../styles/index.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Home</title>
+	</head>
+	<body>
+		<Layout>
+			<div class="bg-mocha-maroon text-center text-white" style={{"margin-top":"24px",height:"auto"}}>
+				<img style="height:auto;" alt="DebadityaMalakar's full-sized avatar" src="https://avatars.githubusercontent.com/u/123065261?v=4" width="260" height="260" class="circle-avatar"/>
+					<br/>
+					<span style={{"font-weight":500 , "font-size":"32px"}}>Debaditya</span>
+					<br/>
+					<br/>
+					<span style={{"font-weight":"500","font-size":"24px"}}>
+						sudo sv start coding! 
+					</span>
+					<br/>
+					<br/>
+					<span id="socials" style={{"font-size":"48px"}}>
+					<a href="https://github.com/DebadityaMalakar" style={{"text-decoration":"none",color:"#000"}}><i style={{"text-decoration":"none"}} class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/debadityamalakar15/" style={{"text-decoration":"none",color:"#000"}}><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</span>
+			</div>
+		</Layout>
+	</body>
+</html>

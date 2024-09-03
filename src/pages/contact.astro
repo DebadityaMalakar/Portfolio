@@ -1,0 +1,50 @@
+---
+import Layout from "../components/layout.astro"
+---
+<style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    /* *{
+        font-family: "Noto Sans",sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    } */
+    body {
+        font-family: Inter,system-ui,sans-serif
+    }
+    .text-center{
+        text-align: center !important;
+    }
+    i.fa{
+        padding: 6px;
+    }
+    .circle-avatar{
+        border-radius: 50% !important;
+    }
+    .bg-mocha-maroon {
+        background: var(--ctp-mocha-maroon) !important;
+    }
+
+    .text-bold{
+        font-weight: 500;
+    }
+
+    .text-white{
+        color: white !important;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+</style>
+<Layout>
+    <div class="bg-mocha-maroon text-center text-white" style={{"margin-top":"24px",height:"auto"}}>
+        <h1 style={{"font-size":"48px","font-weight":700}}>Contact</h1>
+        <h3 style={{"font-size":"24px"}}>Email <i class="fa fa-envelope" aria-hidden="true"></i>: debadityamalakar@outlook.com</h3>
+        <h3 style={{"font-size":"24px"}}>INSTAGRAM <i class="fa fa-instagram" aria-hidden="true"></i>: debadityamalakar15</h3>
+    </div>
+</Layout>

@@ -1,0 +1,1 @@
+import"https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/js/uikit-icons.min.js";import"https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/js/uikit.min.js";document.addEventListener("DOMContentLoaded",()=>{document.body.style.background="var(--ctp-mocha-maroon)",document.body.style.height="100vh",document.body.style.color="#fff"});

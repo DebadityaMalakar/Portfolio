@@ -1,0 +1,38 @@
+---
+import "@catppuccin/palette/css/catppuccin.css";
+import "../styles/universal.css";
+const currentYear = new Date().getFullYear();
+
+---
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/123065261?v=4" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.7/dist/js/uikit-icons.min.js"></script>
+</head>
+<nav class="uk-navbar-container bg-mocha-maroon" uk-navbar style={{padding:"6px","margin-top":"0px","padding-top":"0px","margin-left":"8px","margin-bottom":"6px"}}>
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav" style={{"font-size":"32px","font-weight":500}}>
+            <li><a  style={{"font-size":"20px","font-weight":500}} href="/" class="uk-navbar-item text-white">Home</a></li>
+            <li><a style={{"font-size":"20px","font-weight":500}} href="/diary" class="uk-navbar-item text-white">Diary</a></li>
+            <li><a  style={{"font-size":"20px","font-weight":500}} class="text-white"  href="/about">About</a></li>
+            <li><a style={{"font-size":"20px","font-weight":500}} class="text-white" href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<slot>
+
+</slot>
+<div class="bg-mocha-maroon" style={{padding:"6px","font-size":"20px","align-items":"center","text-align":"center"}} uk-sticky="position: bottom">
+    © 2023 - {currentYear} Debaditya . Powered by <a href="https://astro.build/" target="_blank" rel="noopener">AstroJS</a> and <a href="https://getuikit.com/" target="_blank" rel="noopener">UIkit</a>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded",()=>{
+        document.body.style.background="var(--ctp-mocha-maroon)"
+        document.body.style.height="100vh"
+        document.body.style.color="#fff"
+    })
+</script>
