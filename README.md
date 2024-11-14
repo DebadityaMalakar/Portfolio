@@ -1,3 +1,7 @@
+Portfolio borrowed from the below template
+
+This contains two license , one is the original -> LICENSE and the other one is mine -> LICENSE.MD
+
 # 🌌 Milky-Way
 Milky Way brings forth a minimalist design ethos, allowing your work to shine like stars in the night sky. With clean lines and intuitive navigation, visitors are guided effortlessly through your portfolio, focusing solely on your creations.
 
