@@ -3,13 +3,13 @@ title: 'BouncingBall'
 description: 'Bouncing Ball animation using the Canvas API in Javascript'
 
 image:
-    url: '/bouncing-ball-1.PNG'
+    url: '/bouncing-ball-1.jpeg'
     alt: 'GitHub wallpaper'
 worksImage1:
-    url: '/bouncing-ball-1.PNG'
+    url: '/bouncing-ball-1.jpeg'
     alt: 'first image of your project.'
 worksImage2:
-    url: '/bouncing-ball-2.PNG'
+    url: '/bouncing-ball-1.jpeg'
     alt: 'second image of your project.'
 
 platform: Web
