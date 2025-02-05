@@ -1,35 +1,26 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-const allPosts = await getCollection("certificates");
+import Card from "../components/CardCert.astro";
+const allCertificates = await getCollection("certificates");
 const pageTitle = "Certificates";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} class="">
     <div class="gif">
-        <img width="300" height="259" alt="RaccoonNotesGif" src="/blog.webp" />
+        <img id="gifImage" width="300" height="225" alt="RaccoonNotesGif" src="/blog.webp" />
     </div>
     <h2>Certificates</h2>
     <ul role="list" class="link-card-grid">
         {
-            allPosts.map((cardPost) => (
-                <li class="card">
-                        <div class="center">
-                            <h3 class="card__title">
-                                {cardPost.data.title}
-                            </h3>
-                            <br/>
-                            <img
-                                class="card__img"
-                                width="800"
-                                height="600"
-                                src={cardPost.data.image}
-                                alt={cardPost.data.alias}
-                            />
-                        </div>
-                </li>
-
+            allCertificates.map((cardPost) => (
+            <Card 
+            image= {cardPost.data.image}
+            title={cardPost.data.title} 
+            alias={cardPost.data.alias}
+            />
             ))
         }
     </ul>
+
 </Layout>

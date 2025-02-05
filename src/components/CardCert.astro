@@ -1,0 +1,50 @@
+---
+interface Props {
+    image: string;
+    title: string;
+    alias: string;
+}
+
+const { image, title, alias } = Astro.props;
+---
+
+<li class="card">
+    <div class="center">
+        <h3 class="card__title">
+            {title}
+        </h3>
+        <img
+            class="card__img"
+            id={`cardImg-${alias}`}
+            src={image}
+            alt={alias}
+        />
+    </div>
+</li>
+<br/>
+
+<script>
+    function resizeImages() {
+        const images = document.querySelectorAll(".card__img");
+
+        images.forEach(img => {
+            const screenWidth = window.innerWidth;
+            let width;
+
+            if (screenWidth < 600) {
+                width = 300; // Adjust for small screens
+            } else if (screenWidth < 1024) {
+                width = 500; // Medium screens
+            } else {
+                width = 800; // Large screens
+            }
+
+            img.width = width;
+            img.height = width * (3 / 4); // Maintain 4:3 aspect ratio
+        });
+    }
+
+    // Resize images on window load and resize
+    window.addEventListener("resize", resizeImages);
+    window.addEventListener("load", resizeImages);
+</script>
